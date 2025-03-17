@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Yingxuan Hu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Navigation Bar -->
+            <div class="logo">
+                <a href="index.html"><h1>Yingxuan H.</h1></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="experiences.html">Work Experiences</a></li>
+                    <li><a href="interest.html">Interest</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="pdffiles/Resume_FinTech.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="projects-header">
+        <div class="container">
+            <h2>Projects</h2>
+        </div>
+    </section>
+    <section id="projects-details">
+        <div class="container">
+            <div id="table-of-contents">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#project1">Android App with Kotlin: Campus Dating</a></li>
+                    <li><a href="#project2">Waterloo Special Monopoly: "Watopoly"</a></li>
+                    <li><a href="#project3">Company ROI/Sales Projection</a></li>
+                    <li><a href="#project4">Fund Management Project</a></li>
+                </ul>
+            </div>
+
+            <div class="project" id="project1">
+                <h3 class="highlight">Android App with Kotlin: Campus Dating</h3>
+                <p><a href="https://github.com/YingxuanHu/pictures/uwrizz" target="_blank" class="github-link">Github Repo</a></p>
+                <h4>I collaborated with a team to develop an Android dating application for Waterloo students using Kotlin JetPack and Git workflows.<br><br>
+                    This project is developed to help UW-specific students meet/date people based on their preferences.<br><br>
+                    My contributions included designing and integrating multiple user interfaces to enhance the overall user experience.
+                    Additionally, we utilized Google Firebase to store user data and implemented an efficient algorithm to match users based on their preferences.
+                </h4>
+                <h5 class="walkthrough-title">Walkthrough:</h5>
+                <div class="walkthrough">
+                    <div class="step">
+                        <p class="step-description">1. Login page, and Account registration</p>
+                        <img src="pictures/uwrizz1.png" alt="Login Screen" class="project-image">
+                        <img src="pictures/uwrizz2.png" alt="Initial Setup" class="project-image">
+                    </div>
+                    <div class="step">
+                        <p class="step-description">2. After Login, proceed to Profile setting, and Preferences setting</p>
+                        <img src="pictures/uwrizz5.png" alt="Profile Setup" class="project-image">
+                        <img src="pictures/uwrizz6.png" alt="Preferences" class="project-image">
+                    </div>
+                    <div class="step">
+                        <p class="step-description">3. Now, the user can view others after the matching algorithm’s filtered result, while other users can see/like "Alvin" profile as well</p>
+                        <img src="pictures/uwrizz7.png" alt="Matching Algorithm" class="project-image">
+                        <img src="pictures/uwrizz8.png" alt="User Interface" class="project-image">
+                    </div>
+                    <div class="step">
+                        <p class="step-description">4. If two users both liked each other, they will be able to see them in the chat section</p>
+                        <img src="pictures/uwrizz9.png" alt="Chat Section" class="project-image">
+                        <img src="pictures/uwrizz10.png" alt="Chat Interface" class="project-image">
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="project" id="project2">
+                <h3 class="highlight">Waterloo Special Monopoly: "Watopoly"</h3>
+                <p><a href="https://github.com/YingxuanHu/AlvinWatopoly" target="_blank" class="github-link">Github Repo</a></p>
+                <h4>I worked on the Monopoly Coding Project with another teammate, where we created a simple modified Monopoly game using C++. 
+                    The game is specific to the University of Waterloo Campus, and there are added rules as well. The specification of this project can be found 
+                    <a href="pdffiles/watopoly.pdf" target="_blank">here</a>. <br><br>
+                    We efficiently utilized Object-Oriented Programming (OOP) features in C++, implementing polymorphism, and also 
+                    employed encapsulation by declaring critical game data as private within their respective classes.
+                    <br><br>
+                    The detailed design logic can be found 
+                    <a href="pdffiles/design.pdf" target="_blank">here</a>.
+                </h4>
+                <h5 class="walkthrough-title">Walkthrough:</h5>
+                <div class="walkthrough">
+                    <p class="step-description">Command Interpretation:</p>
+                    <ul>
+                        <li><u>roll</u> (if the player can roll): The player rolls two dice, moves the sum, and takes action on the new square.</li>
+                        <li><u>next</u> (if the player cannot roll): Give control to the next player.</li>
+                        <li><u>trade "name" "give" "receive"</u>: Offers a trade to "name" with the current player offering "give" and requesting "receive".</li>
+                        <li><u>"property" buy/sell</u>: Attempts to buy or sell an improvement for a property.</li>
+                        <li><u>mortgage "property"</u>: Attempts to mortgage the property.</li>
+                        <li><u>unmortgage "property"</u>: Attempts to unmortgage the property.</li>
+                        <li><u>bankrupt</u>: Declare bankruptcy (only if a player must pay more money than they have).</li>
+                        <li><u>assets</u>: Displays the assets of the current player.</li>
+                        <li><u>all</u>: Displays the assets of every player.</li>
+                    </ul>
+                    <div class="step">
+                        <p class="step-description">1. Game Initialization Setup</p>
+                        <img src="pictures/wato1.png" alt="initialization" class="project-image-custom">
+                    </div>
+                    <div class="step">
+                        <p class="step-description">2. Game play (1)</p>
+                        <img src="pictures/wato2.png" alt="Game Play" class="project-image-custom">
+                    </div>
+                    <div class="step">
+                        <p class="step-description">3. Game play (2)</p>
+                        <img src="pictures/wato3.png" alt="Game Play" class="project-image-custom">
+                    </div>
+                    <div class="step">
+                        <p class="step-description">4. Game play (3)</p>
+                        <img src="pictures/wato4.png" alt="Game Play" class="project-image-custom">
+                    </div>
+                    <div class="step">
+                        <p class="step-description">5. Game play (4)</p>
+                        <img src="pictures/wato5.png" alt="Game Play" class="project-image-custom">
+                    </div>
+                    <div class="step">
+                        <p class="step-description">6. Game play (5)</p>
+                        <img src="pictures/wato6.png" alt="Game Play" class="project-image-custom">
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="project" id="project3">
+                <h3 class="highlight">Company ROI/Sales Projection</h3>
+                <h4>Description:</h4>
+                <ul>
+                    <li>Provide a brief description of the project here.</li>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                </ul>
+            </div>
+            <br>
+            <div class="project" id="project4">
+                <h3 class="highlight">Fund Management Project</h3>
+                <h4>Description:</h4>
+                <ul>
+                    <li>Provide a brief description of the project here.</li>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Yingxuan Hu. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,444 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: #1f1f1f;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+header .logo a {
+    text-decoration: none;
+    color: #e0e0e0;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: inherit; /* Inherit color from the anchor tag */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 1.5rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #dcbf9a; /* Changed to beige color */
+}
+
+header nav ul li a.highlighted {
+    background-color: #dcbf9a; /* Changed to beige color */
+    color: #1f1f1f;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+/* Hero section styles */
+#hero {
+    background: #121212;
+    padding: 8rem 2rem 2rem 2rem; /* Adjusted padding */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+#hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hero-text {
+    max-width: 50%;
+    margin-left: 12rem; /* Adjust this value to change the left margin */
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #dcbf9a; /* Changed to beige color */
+}
+
+.hero-text h1 span {
+    font-size: 1.5rem; /* Made smaller */
+    color: #fff; /* Changed to white */
+}
+
+.hero-text p {
+    font-size: 1rem; /* Made smaller */
+    color: #fff; /* Changed to white */
+}
+
+.cta-buttons {
+    margin-top: 1.5rem;
+}
+
+.cta-buttons .btn {
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary {
+    background-color: #dcbf9a; /* Changed to beige color */
+    color: #1f1f1f;
+}
+
+.btn-primary:hover {
+    background-color: #e0e0e0;
+    color: #1f1f1f;
+}
+
+.btn-secondary {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    border: 2px solid #dcbf9a; /* Changed to beige color */
+}
+
+.btn-secondary:hover {
+    background-color: #dcbf9a; /* Changed to beige color */
+    color: #1f1f1f;
+    border-color: #dcbf9a; /* Changed to beige color */
+}
+
+.hero-image {
+    flex-shrink: 0;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 700px; /* Increased size */
+    height: auto;
+    border-radius: 40px;
+    margin-right: 175px;
+}
+
+/* About section styles */
+#about-header {
+    padding: 4rem 2rem;
+    background-color: #1f1f1f;
+    text-align: center;
+    font-size: 3rem;
+    color: #dcbf9a; /* Beige color */
+}
+
+#about-details {
+    padding: 4rem 2rem;
+    background-color: #121212; /* Ensure background color matches the page background */
+    color: #e0e0e0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-section {
+    margin-bottom: 2rem;
+}
+
+.about-section h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #dcbf9a; /* Beige color */
+}
+
+.about-section h4 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #dcbf9a; /* Beige color */
+}
+
+.about-section p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.about-section ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    color: #e0e0e0;
+}
+
+.about-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Contact section styles */
+#contact-header {
+    padding: 4rem 2rem; /* Adjusted padding to separate from the details section */
+    background-color: #1f1f1f;
+    text-align: center;
+    font-size: 3rem;
+    color: #dcbf9a;
+}
+
+#contact-details {
+    padding: 4rem 2rem; /* Adjusted padding to match the design */
+    background-color: #121212; /* Ensure background color matches the page background */
+    color: #e0e0e0;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+#contact-details p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+#contact-details p a {
+    color: #dcbf9a; /* Changed to beige color */
+    text-decoration: none;
+}
+
+#contact-details p a:hover {
+    text-decoration: underline;
+}
+
+#contact-details p:first-of-type {
+    font-size: 2rem; /* Change this value to adjust the size */
+    font-weight: bold;
+}
+
+#work-header {
+    padding: 4rem 2rem;
+    background-color: #1f1f1f;
+    text-align: center;
+    font-size: 3rem;
+    color: #dcbf9a; /* Beige color */
+}
+
+#work-details {
+    padding: 4rem 2rem;
+    background-color: #121212; /* Ensure background color matches the page background */
+    color: #e0e0e0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.work-experience {
+    margin-bottom: 2rem;
+}
+
+.work-experience h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #dcbf9a; /* Beige color */
+}
+
+.work-experience h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #dcbf9a; /* Beige color */
+}
+
+.work-experience ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    color: #e0e0e0;
+}
+
+.work-experience ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Header styles */
+#projects-header {
+    padding: 4rem 2rem;
+    background-color: #1f1f1f;
+    text-align: center;
+    font-size: 3rem;
+    color: #dcbf9a; /* Beige color */
+}
+
+/* Project section styles */
+#projects-details {
+    padding: 4rem 2rem;
+    background-color: #121212; /* Ensure background color matches the page background */
+    color: #e0e0e0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project {
+    margin-bottom: 2rem;
+    padding-top: 4rem;
+}
+
+.project .highlight {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #dcbf9a; /* Beige color */
+}
+
+.project h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #e0e0e0; /* White color */
+}
+
+.project ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    color: #e0e0e0;
+}
+
+.project ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.project-image.large {
+    width: 100%; /* Ensure the image takes up full width */
+    height: auto;
+    display: block;
+    object-fit: cover; /* Ensure the image covers the container */
+    border: none;
+    margin: 0 auto;
+}
+
+/* GitHub link styles */
+.github-link {
+    color: #dcbf9a; /* Beige color to match the theme */
+    text-decoration: none;
+}
+
+.github-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Walkthrough section styles */
+.walkthrough-title {
+    font-size: 1.2rem;
+    color: #dcbf9a; /* Beige color */
+}
+
+.walkthrough {
+    margin-top: 1rem;
+}
+
+.walkthrough .step {
+    margin-bottom: 2rem;
+}
+
+.walkthrough .step-description {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #e0e0e0; /* White color */
+}
+
+.walkthrough .project-image {
+    max-width: 45%; /* Adjust the size of the images */
+    margin-right: 1rem;
+    border-radius: 8px;
+}
+
+.project-image-custom-1 {
+    width: 700px;
+    height: 450px;
+}
+
+.project-image-custom-2 {
+    width: 700px;
+    height: 700px;
+}
+
+#table-of-contents {
+    margin-bottom: 2rem;
+    padding: 0rem;
+    border-radius: 0px;
+    border-bottom: 2px solid #dcbf9a; /* Beige color for the bottom border */
+}
+
+#table-of-contents h3 {
+    font-size: 2rem;
+    color: #dcbf9a;
+}
+
+#table-of-contents ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#table-of-contents ul li {
+    margin-bottom: 0.5rem;
+}
+
+#table-of-contents ul li a {
+    color: #dcbf9a; /* Beige color */
+    text-decoration: none;
+}
+
+#table-of-contents ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto; /* Ensure footer stays at the bottom */
+}
+
+/* Interest section styles */
+#interest-header {
+    padding: 4rem 2rem;
+    background-color: #1f1f1f;
+    text-align: center;
+    font-size: 3rem;
+    color: #dcbf9a; /* Beige color */
+}
+
+#interest-details {
+    padding: 4rem 2rem;
+    background-color: #121212; /* Ensure background color matches the page background */
+    color: #e0e0e0;
+    max-width: 800px;
+    margin: 0 auto;
+}
